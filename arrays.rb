@@ -66,8 +66,85 @@ p ar7
 ar7[2] = []
 p ar7
 
-ar8 = ('one', 1, 'tre', 'fast')
+ar8 = ['one', 34, 55, 'enigma']
 p ar8.each { |x| print x, ""}
+
+ar9 = []
+p ar9.empty?
+
+p ar8[0]
+
+ar10 = [1, 2, 3,[4, 5, 6]]
+p 'Not flatten array', ar10
+p 'Flatten array', ar10 = ar10.flatten
+
+ar11 = ['cat' ,'dog' , 'elephant', 'bird']
+p 'Is array include cat? ', ar11.include?('cat')
+
+ar12 = [1, 43, 55, 2, 66, 90, 101]
+p 'Even numbers of array:',ar12.select { |nubmer| nubmer.even? }
+
+ar13 = [1, 55, 90, 43, 55, 2, 66, 90, 101]
+p ar13.uniq!
+
+#Hashes
+
+hash1 = Hash.new('def')
+hash1 = { nickname:'first' ,game:'second' ,position:'third'}
+
+p hash_arr1 = { nickname: 'Enigma', game: 'Dota 2', position: 'Mid lane' }
+p hash_arr2 = { :nickname => 'Djerman', :game => 'CS:GO', :position=>'Support on A'}
+
+p ''
+
+p arr14 = (1..10)
+p arr15 = (1...10)
+
+p arr14.include?(5), arr15.include?(5), arr15.include?(10)
+
+p ''
+
+p arr15 = ('a'..'aa')
+p ''
+p arr15.each { |i| p i}
+p arr15.step { |i| p i}
+
+p arr15.to_a
+
+objct = ''
+objct1 = 'test'
+objct1 = objct1.to_sym
+p objct1
+
+o = nil
+p o.nil?
+
+p false == 0
+p false == nil
+p false == ''
+p false == {}
+p false == []
+
+j = 0.0 if false
+p j
+#p asd
+
+ZET = 13
+p ZET
+
+x = 1
+p x += 5
+
+u,i,o = 4,5,6
+p = l = 9
+abc = 9
+abc += 2
+abc -= 4
+abc *= 3
+abc /=5
+
+
+
 
 
 
